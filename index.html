@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <!-- Adds Group's logo created by Piero to the top left of the viz-->
+        <div style="center">
+            <img id="logo" src="visuals/Team Logos/mainLogo.jpg" height= "45px" width ="300px">
+        </div>
+
+        <!-- Creates Headers for the leagues and divisions.
+        It also places the team's logo in order of the place they finished within their divison
+        lastly adds on click feature to each image to enable filtering
+         -->
+        <div id="Teams">
+            <div id="NationalLeague" class="League">
+                <h2>National League</h2>
+               
+                <div id="West" class="NLDivision">
+                <h5>West</h5>
+                
+                <p>1st <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/losangelesDodgers40x40.jpg" alt="Los Angeles Dodgers" title="Los Angeles Dodgers" id="LAN" ></p>
+               
+                <p>2nd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/sanfranciscoGiants40x40.jpg" alt="San Francisco Giants" title="San Francisco Giants" id= "SFN"></p>
+               
+                <p>3rd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/sandiegoPadres40x40.jpg" alt="San Diego Padres" title="San Diego Padres" id="SDN"></p>
+                
+                <p>4th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/coloradoRockies40x40.jpg" alt="Colorado Rockies" title="Colorado Rockies" id="COL"></p>
+               
+                <p>5th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/arizonaDiamondbacks40x40.jpg" alt="Arizona Diamondbacks" title="Arizona Diamondbacks" id="ARI"></p>
+
+                </div>
+
+                <div id="Central" class= "NLDivision">
+                    <h5>Central</h5>
+                   
+                    <p>1st <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/stlouisCardinals40x40.jpg" alt="St. Louis Cardinals" title="St. Louis Cardinals" id="SLN"></p>
+                    
+                    <p>2nd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/pittsburghPirates40x40.jpg" alt="Pittsburgh Pirates" title="Pittsburgh Pirates" id="PIT"></p>
+                    
+                    <p>3rd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/milwaukeeBrewers40x40.jpg" alt="Milwaukee Brewers" title="Milwaukee Brewers" id="MIL"></p>
+                   
+                    <p>4th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/cincinattiReds40x40.jpg" alt="Cincinatti Reds" title="Cincinatti Reds" id="CIN"></p>
+                    
+                    <p>5th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/chicagoCubs40x40.jpg" alt="Chicago Cubs" title="Chicago Cubs" id="CHN"></p>
+
+                </div>
+
+                <div id="East" class= "NLDivision">
+                    <h5>East</h5>
+                    
+                    <p>1st <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/washingtonNationals40x40.jpg" alt="Washington Nationals" title="Washington Nationals" id="WAS"></p>
+                    
+                    <p>2nd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/newyorkMets40x40.jpg" alt="New York Mets" title= "New York Mets" id="NYN"></p>
+                   
+                    <p>3rd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/atlantaBraves40x40.jpg" alt="Atlanta Braves" title="Atlanta Braves" id="ATL"></p>
+                    
+                    <p>4th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/miamiMarlins40x40.jpg" alt="Miami Marlins" title= "Miami Marlins" id="MIA"></p>
+                    
+                    <p>5th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/philadelphiaPhillies40x40.jpg" alt="Philadelphia Phillies" title="Philadelphia Phillies" id="PHI"></p>
+
+                </div>
+
+            </div>
+
+
+
+            <div id="AmericanLeague" class="League">
+                <h2>American League</h2>
+
+               
+                <div id="East" class="ALDivision">
+                    <h5>East</h5>
+                    
+                    <p>1st <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/baltimoreOrioles40x40.jpg" alt="Baltimore Orioles" title= "Baltimore Orioles" id="BAL"></p>
+                    
+                    <p>2nd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/newyorkYankees40x40.jpg" alt="New York Yankees" title= "New York Yankees" id="NYA"></p>
+                    
+                    <p>3rd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/torontoBlueJays40x40.jpg" alt="Toranto Blue Jays" title= "Toronto Blue Jays" id="TOR"></p>
+                    
+                    <p>4th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/tampabayRays40x40.jpg" alt="Tampa Bay Rays" title= "Tampa Bay Rays" id="TBA"></p>
+                    
+                    <p>5th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/bostonRedSox40x40.jpg" alt="Boston Red Sox" title= "Boston Red Sox" id="BOS"></p>
+
+                </div>
+
+                <div id="Central" class="ALDivision">
+                    
+                    <h5>Central</h5>
+                    
+                    <p>1st <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/detroitTigers40x40.jpg" alt="Detroit Tigers" title="Detroit Tigers" id="DET"></p>
+                    
+                    <p>2nd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/kansascityRoyals40x40.jpg" alt="Kansas City Royals" title="Kansas City Royals" id="KCA"></p>
+                    
+                    <p>3rd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/clevelandIndians40x40.jpg" alt="Cleveland Indians" title= "Cleveland Indians" id="CLE"></p>
+                    
+                    <p>4th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/chicagoWhiteSox40x40.jpg" alt="Chicago White Sox" title="Chicago White Sox" id="CHA"></p>
+                    
+                    <p>5th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/minnesotaTwins40x40.jpg" alt="Minnesota Twins" title= "Minnesota Twins" id="MIN"></p>
+
+                </div>
+
+
+                 <div id="West" class="ALDivision">
+                    
+                    <h5>West</h5>
+                   
+                    <p>1st <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/losangelesAngels40x40.jpg" alt="Los Angeles Angels" title="Los Angeles Angels" id="LAA"></p>
+                   
+                    <p>2nd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/oaklandAthletics40x40.jpg" alt="Oakland Athletics" title="Oakland Athletics" id="OAK"></p>
+                   
+                    <p>3rd <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/seattleMariners40x40.jpg" alt="Seattle Mariners" title= "Seattle Mariners" id="SEA"></p>
+                   
+                    <p>4th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/houstonAstros40x40.jpg" alt="Houston Astros" title="Houston Astros" id="HOU"></p>
+                   
+                    <p>5th <img onclick="updateListByTeam(this.id)" src="visuals/Team Logos/texasRangers40x40.jpg" alt="Texas Rangers" title="Texas Rangers" id="TEX"></p>
+
+                </div>
+
+            </div>
+
+            <!-- Adds logo of MLB as sort of a back button to select all Teams -->
+            <div id="AllTeams">
+
+                <h2>All Teams</h2>
+                <p><img onclick="resetPickerList()" src="visuals/Team Logos/mlblogo40x40.jpg" alt="MLB Logo" title= "All Teams" style="padding-left:90px" id="All Teams"></p>
+
+            </div>  
+        </div>
+
+        <!-- Creates the baseball field. Basic structure was imported: such as grass and base lines however sizes and locations were changed some extraneous things were removed such as grass pattern see CSS for more details. Also added onclick capabilities for filtering and also added the outfield circle and shortstop circle -->
+
+        <div id="stadium">
+            <div id="field" class="grass"></div>
+            <div id="in-field"></div>
+            <div id="in-field-grass" class="grass"></div>
+            <div id="batting-circle"></div>
+            <div id="base-lines"></div>
+            
+            <div id="first-base" class="base" onclick="updateListByPosition('1B')"></div>
+            <div id="second-base" class="base" onclick="updateListByPosition('2B')"></div>
+            <div id="shortstop" class="base" onclick="updateListByPosition('SS')"></div>
+            <div id="third-base" class="base" onclick="updateListByPosition('3B')"></div>
+            <div id="home-plate" class="base" onclick="updateListByPosition('C')"></div>
+            <div id="outfield" class="base" onclick="updateListByPosition('OF')"></div>
+            <div id="pitchers-mound" onclick="updateListByPosition('P')"></div>
+            <div id="pitchers-plate"onclick="updateListByPosition('P')"></div>
+            <div id="batters-box-right" class="batters-box"></div>
+            <div id="batters-box-left" class="batters-box"></div>
+
+
+            <div id="viewport" data-spy="scroll" data-target="#myScrollspy" data-offset="0">
+            </div>
+
+           
+
+
+        <!-- Adds the different charts: trend chart, player picker (list of players), and bar chart -->    
+        <div id="trends">
+            <div id="trendsChart"></div>
+        </div> 
+        <div id="trendsPicker"></div>
+        <div id ="bars"> 
+            <div id="barChart"></div>  
+            <div id="barPicker"></div> 
+        </div> 
+    <!-- External js libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <!-- Our js files -->
+    <script src="d3-legend.min.js"></script>
+    <script src="util.js"></script>
+    <script src="visuals/playerTrends.js"></script> 
+    <script src="visuals/playerChart.js"></script> 
+    <script src="visuals/playerPicker.js"></script>
+    <script src="source/allPlayers.js"></script>
+    <script src="source/teams.js"></script>
+
+
+  </body>
+</html>
+ 
